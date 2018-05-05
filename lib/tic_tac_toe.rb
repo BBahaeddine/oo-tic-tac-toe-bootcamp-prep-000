@@ -111,5 +111,16 @@ class TicTacToe
     return false;
   end
   
+  def full?()
+    index = 0
+    @board.each do |cell|
+      if !position_taken?(index)
+        return false;
+      end
+      index += 1
+    end
+    return true
+  end
+  
   
 end
