@@ -134,13 +134,13 @@ class TicTacToe
     end
   end
   
-  def over?(board)
-    if won?(board) != false || draw?(board) || full?(board)
+  def over?()
+    if won?() != false || draw?() || full?()
       return true
     else
       return false
     end
-end
+  end
   
   
 end
