@@ -142,5 +142,17 @@ class TicTacToe
     end
   end
   
+  def winner()
+    if !draw?() && over?()
+      comboArray = won?()
+      if @board[comboArray[0]] == "X"
+        return "X"
+      else
+        return "O"
+      end
+    else
+      return nil
+    end
+  end
   
 end
